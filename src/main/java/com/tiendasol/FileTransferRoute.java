@@ -22,7 +22,10 @@ public class FileTransferRoute extends RouteBuilder {
             .log("Procesando archivo: ${file:name}")
             .log("Fecha/hora de procesamiento: ${date:now:yyyy-MM-dd HH:mm:ss}")
             .convertBodyTo(String.class)
-            .transform().simple("${body.toUpperCase()}")
+            .process(exchange -> {
+                String body = exchange.getIn().getBody(String.class);
+                exchange.getIn().setBody(body.toUpperCase());
+            })
             .to("file:" + BASE_DIR + "/output")
             .log("Archivo ${file:name} copiado a output con transformación a mayúsculas");
 
