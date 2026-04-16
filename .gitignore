@@ -1,22 +1,119 @@
 # Maven
 target/
+dependency-reduced-pom.xml
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+flattened-pom.xml
 
-# IDE
+# Maven Wrapper (mantener solo mvnw y mvnw.cmd, ignorar .mvn/)
+.mvn/wrapper/maven-wrapper.jar
+
+# IDE - IntelliJ IDEA
 .idea/
 *.iml
-.vscode/
+*.ipr
+*.iws
+
+# IDE - Eclipse
 .settings/
 .project
 .classpath
-*.swp
+.factorypath
 
-# OS
+# IDE - VS Code
+.vscode/
+*.code-workspace
+
+# IDE - NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+
+# Java
+*.class
+*.log
+*.ctxt
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
 
 # Logs
 logs/
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Directory-based project format
+.idea/
+.vscode/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+.idea/replstate.xml
+
+# SonarQube
+.scannerwork/
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Gradle (si se usa en el futuro)
+.gradle/
+build/
+
+# Node.js (si se usa en el futuro)
+node_modules/
+npm-debug.log*
 
 # Directorios de procesamiento (se crean en runtime)
 output/
 archived/
+
+# Archivos temporales
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Archivos de configuración local
+application-local.properties
+application-dev.properties
+*.local
